@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/img/favicon.png" />
+  <!-- Style.css -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+    <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/074c6b095f.js" crossorigin="anonymous" defer></script>
+  <title>Clima NBW!</title>
+</head>
+
+<body style="background-color: #C1CFEA;">
+  <section>
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100" style="color: #282828;">
+        <div class="col-md-9 col-lg-7 col-xl-5">
+          <div class="card mb-4" style="border-radius: 25px;">
+            <div class="card-body p-4">
+              <form class="busca d-flex justify-content-center align-items-center h-100">
+                <input class="city" type="text" name="city" id="searchInput"
+                  placeholder="Digite sua cidade Ex: Rio de Janeiro" />
+                <button class="buscar" wm-submit>Buscar</button>
+              </form>
+            </div>
+          </div>
+          <div class="card mb-4 gradient-custom" style="border-radius: 25px;">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between mb-1 pb-2">
+                <div>
+                  <h2 id="graus" class="display-2"><strong></strong></h2>
+                  <p data-algumacoisa="title" id="titulo" class="text-muted mb-0"></p>
+                  <i class="fas fa-tint" id="humidity" style="display: none;"></i>
+                </div>
+                <div>
+                  <img id="tempo" src="./assets/img/sol.png" width="150px">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="border-radius: 25px;">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-around text-center mb-4 pb-3 pt-2">
+                <div class="flex-column">
+                  <p class="small"><strong id="max-01"></strong></p>
+                  <img class="icon" src=""></img>
+                  <p class="mb-0"><strong id="day-01"></strong></p>
+                </div>
+                <div class="flex-column">
+                  <p class="small"><strong id="max-02"></strong></p>
+                  <img class="icon" src=""></img>
+                  <p class="mb-0"><strong id="day-02"></strong></p>
+                </div>
+                <div class="flex-column">
+                  <p class="small"><strong id="max-03"></strong></p>
+                  <img class="icon" src=""></img>
+                  <p class="mb-0"><strong id="day-03"></strong></p>
+                </div>
+                <div class="flex-column">
+                  <p class="small"><strong id="max-04"></strong></p>
+                  <img class="icon" src=""></img>
+                  <p class="mb-0"><strong id="day-04"></strong></p>
+                </div>
+                <div class="flex-column">
+                  <p class="small"><strong id="max-05"></strong></p>
+                  <img class="icon" src=""></img>
+                  <p class="mb-0"><strong id="day-05"></strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="./script/index.js"></script>
+</body>
+
+</html>
